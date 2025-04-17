@@ -1,0 +1,33 @@
+Class and object :- 
+------------------
+Class : - 
+1) Class is blue print of object.
+2) Class has properties and methods.
+3) Name of the class start with the capital letter.
+
+Object : - Object is real world entities .
+
+Creation of class in java : -
+-------------------------------
+
+class Student{
+    String name;
+    int age;
+    float percentage;
+
+    void calculatePercentage(int math , int phy , int chem){
+        percentage = (math + phy + chem) / 3;
+        sout(percentage);
+    }
+}
+
+creating Object of the class in main function: -
+------------------------------------------------
+Student s1 = new Student(); // Instance 
+s1.name = "adarsh";
+s1.age = 23;
+s1.percentage = 35%;
+sout(s1.name); // adarsh
+
+
+

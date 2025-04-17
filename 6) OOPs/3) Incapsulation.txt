@@ -1,0 +1,15 @@
+Incapsulation in Java : -
+-------------------------
+Incapsulation is defined as the wrapping up of data & properies in one unit . It also implements data hiding.
+
+example : -
+------------
+
+class car{
+    String color;
+    int height;
+
+    void drive(){
+        sout("Steps of the drive");
+    } 
+}

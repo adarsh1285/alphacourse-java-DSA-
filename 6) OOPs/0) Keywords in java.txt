@@ -1,0 +1,12 @@
+1) This keyword in java : -
+This keyword is used to refer to the current object.
+
+2) Static keyword : Properties and functions of any class which is same for all objects before these
+Properties and functions we use STATIC keyword.
+
+we can make static to Properties, functions , block .
+
+3) Super keyword : super used to refer immediate parent class object.
+ - to access parent's Properties
+ - to access parent's functions
+ - to access parent's constructor

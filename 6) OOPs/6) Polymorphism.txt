@@ -1,0 +1,15 @@
+Polymorphism in java : Multiple technique to solve one task.
+-------------------------
+1) Compile time polymorphism : (Function overloading)
+2) Run time polymorphism : (Function overriding)
+
+================================================================================================================
+1) Compile time polymorphism : (Function overloading) : Multiple functions with same name with different parameter
+ 
+2) Run time polymorphism : (function overriding) : Parent and child both contain the same function with different
+   definition.
+
+===============================================================================================================
+
+Package in java : Package is a group of similar classes , interfaces and sub-package.
+  

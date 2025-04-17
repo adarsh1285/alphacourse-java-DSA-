@@ -1,0 +1,58 @@
+Access Modifiers in java : -
+------------------------------
+1) Private : accessed in their class only.
+2) Default : Accessed in their class and package.
+3) Protected : Accessed in their class , package and outside of the package by subClass only.
+4) Public : Accessed in their class , package , outside of the package by subClass only and outside of the package.
+
+This keyword in java : -
+-------------------------
+This keyword is used to refer to the current object.
+
+example:-
+----------
+class Pen{
+    String color;
+    int tip;
+
+    void setColor(String color){
+        this.color = color;
+    }
+}
+
+Getter and Setter in java : -
+------------------------------
+We use getter and setter for access and modify the private variable in java.
+
+Getter : Access the private variable
+Setter : Modify the private variable
+
+example:-
+-----------
+
+class Person {
+    // Private variable (Encapsulation)
+    private String name;
+
+    // Getter method
+    public String getName() {
+        return name;
+    }
+
+    // Setter method
+    public void setName(String newName) {
+        this.name = newName;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person();
+        
+        // Setter का उपयोग करके value set कर रहे हैं
+        p.setName("Rahul");
+
+        // Getter का उपयोग करके value प्राप्त कर रहे हैं
+        System.out.println("Name: " + p.getName()); // Output: Name: Rahul
+    }
+}

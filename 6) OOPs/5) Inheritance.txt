@@ -1,0 +1,83 @@
+Inheritance in java : -
+-------------------------
+Inheritance is when properies and methods of base class are passed on to a derived class.
+
+class OOPs{
+    public static void main(String args[]){
+        Fish shark = new Fish();
+        shark.eat();  //  eats
+    }
+}
+
+class Animal{
+    String color;
+    void eat(){
+        sout("eats");
+    }
+}
+
+class Fish extends Animal{
+    int fins;
+}
+
+===============================================================================================================
+
+Type of Inheritance : -
+------------------------
+1) Single level Inheritance : Base class ------------> Derived class 
+ex:-
+ class A {
+    // properties and methods are there
+ }
+ class B extends A{
+    // All the properties of A passed to B.
+ }
+ =============================================================================================================
+2) Multi level Inheritance : Base class ----------> Derived class ------------> Derived class
+
+ex:-
+class A {
+    // properties and methods
+}
+
+class B extends A {
+    //properties and methods
+}
+
+class C extends B {
+    // properties and methods
+}
+
+================================================================================================================
+3) Hiererchial Inheritance : 
+    
+             |----->Derived class B
+             |
+Base class A |----->Derived class C
+             |
+             |----->Derived class E
+
+class A{
+    //properties and methods
+}
+
+class B extends A{
+    // properties and methods
+}
+
+class C extends A {
+    // properties and methods
+}
+
+class E extends A {
+    // properties and methods
+}
+
+==============================================================================================================
+
+4) Hybrid Inheritance : In type of inheritance all the possible connection connected.
+
+
+
+               
+        

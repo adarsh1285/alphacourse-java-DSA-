@@ -1,0 +1,72 @@
+Interfaces in java : Blue print of class called Interfaces.
+
+-> Why we use interfaces :
+1) For the creating Multiple Inheritance.
+2) For total Abstraction.(for 100% abstraction we use interfaces).
+
+===============================================================================================================
+-> Basic properties of interfaces : -
+
+1) We Use IMPLEMENTS for inherite the properties and methods form the base class.
+2) All methods of interfaces are public , abstract & without implementation .
+3) Variables in interface are final, public & static.
+4) Used to achieve total abstracition.
+
+===============================================================================================================
+1) Example of Interface as total abstraction
+ex:-
+class OOPs {
+    public static void main (String args[]){
+        Queen Q = new Queen();
+        Q.moves();
+    }
+}
+
+interface ChessPlayer{
+    void moves();  // this function is public , adstract & without implementation.
+}
+
+class Queen implementations ChessPlayer{
+    public void moves(){
+        sout("moves all directions");
+    }
+}
+
+class Pyanda implementations ChessPlayer{
+    public void moves(){
+        sout("moves all directions");
+    }
+}
+
+class Horse implementations ChessPlayer{
+    public void moves(){
+        sout("moves all directions");
+    }
+}
+
+================================================================================================================
+
+2) Example of Interface as creating multiple interface.
+
+class Herbivore_________ _________class Carnivore
+                        |                            
+                        |
+                        |
+                      Bear (Bear have both properties)
+
+interface Herivore {
+    void eat();
+}
+interface Carnivore {
+    void color();
+}
+class Bear implements Herbivore, Carnivore{
+    public void eat(){
+        sout("meet");
+    }
+    public void color(){
+        sout("black");
+    }
+}
+==============================================================================================================
+

@@ -1,0 +1,43 @@
+Abstraction : Hiding all the unnecessory details and showing only the important parts to the users.
+(Abstract gives function declaretion but not gives fucntion definition.) or Abstract class gives a idea for the 
+derived class. Any abstraction not 100% . 
+---------------------------------------------------------------------------------------------------------------
+Abstract class : -
+------------------
+-> Can not create a instance(object) of abstract class.
+-> Can have adstract/non-abstract methods.
+-> Can have constructor.
+ex:-
+================================================================================================================
+public class OOPs{
+    public static void main (String args[]){
+       Horse h = new Horse();
+       sout(h.Lags);
+    }
+} 
+
+abstract class Animal{
+    void eat(){
+        sout("Animal eats");
+    }
+
+    abstract void Lags(){
+
+    }
+      OR 
+    abstract void Lags();
+}
+
+class Horse extends Animal{
+    void Lags(){
+        sout("4 lages");
+    }
+}
+
+class Cow extends Animal{
+    void Lags(){
+        sout("4 lages");
+    }
+}
+===============================================================================================================
+

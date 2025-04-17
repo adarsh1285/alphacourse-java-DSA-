@@ -1,0 +1,52 @@
+Constructor in java : -
+-------------------------
+Constructor is a special method which is invoked automatically at time of object creation.
+1) Constructors have same name as class.
+2) Constructors don't have a return type. (Not even void)
+3) Constructors are only called once, at the object creation.
+4) Memory allocation happens when constructor called.
+5) If we are not create any constructor then in that case java automatically create a constructor.
+
+===============================================================================================================
+
+example of constructor: -
+------------------------
+ 
+ public class OOPS{
+    public static void main(String args[]){
+        Student s1 = new Student(); // creating object and calling constructor
+        
+        Student s2 = new Student("Adarsh");   // creating object and calling constructor
+
+        Student s3 = new Student(34);  // creating object and calling constructor
+    }
+ }
+
+ class Student{
+    String name;
+    String age;
+
+    // constructor
+    Student(){      // Non-parameterized constructor
+        this.name = name;
+        this.age = age;
+        sout("This is a constructor");   // This is a constructor
+    }
+
+    Student(String name){    // Parameterized Constructor
+        this.name = name;
+    }
+ }
+
+===============================================================================================================
+
+Type of constructor in java : -
+------------------------------
+1) Non-parameterized : Constructor has not any parameter.
+2) Parameteried : Constructor has parameter.
+3) Copy constructor : Copy all the properties and methods of object(1) in to object(2).
+
+==============================================================================================================
+
+Destructor In java : which is delete the constructor called Destructor. Destructor does not use in java becouse 
+Garbage collector of java delete all the unnecessary objects. 
